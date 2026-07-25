@@ -2,6 +2,7 @@
 title: "5 Bible Verses for Anxious Moms (Free Printable Inside)"
 description: "Five scriptures to hold onto in overwhelming moments, plus a free printable card set to keep them close."
 pubDate: 2026-07-15
+heroImage: "../../assets/anxious-moms-hero.jpg"
 ---
 
 Some days the noise doesn't stop. The baby's crying, the to-do list is longer than the day, and your mind is running five steps ahead of your body. If you've ever felt your chest tighten in the middle of an ordinary afternoon — you're not alone, and you're not failing.
