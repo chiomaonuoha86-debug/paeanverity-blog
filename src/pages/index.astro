@@ -13,37 +13,66 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 	<body>
 		<Header />
 		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
-			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This template
-				serves as a lightweight, minimally-styled starting point for anyone looking to build a personal
-				website, blog, or portfolio with Astro.
-			</p>
-			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
-			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/content/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to
-				<a href="https://docs.astro.build/">read the docs</a>
-				or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out
-				<a href="https://github.com/Charca/astro-blog-template">astro-blog-template</a>
-				by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
+			<section class="hero">
+				<img src="/logo.png" alt="Paean Verity logo" class="hero-logo" />
+				<h1>Paean Verity</h1>
+				<p class="tagline">Truth, held close, until it becomes the song your whole life sings.</p>
+				<div class="hero-links">
+					<a href="/blog" class="btn">Read the Blog</a>
+					<a href="https://selar.com/m/paean-verity1" class="btn" target="_blank">Shop Now</a>
+				</div>
+			</section>
+
+			<section class="intro">
+				<h2>What is Paean Verity?</h2>
+				<p>
+					Paean Verity creates scripture-anchored devotionals, coloring books, and
+					printable resources for believers who want truth to shape their everyday
+					lives — not just their Sunday mornings. Every product is built to help you
+					surround yourself with what's true until it becomes second nature.
+				</p>
+			</section>
+
+			<section class="cta">
+				<h2>Follow Along</h2>
+				<p>
+					New devotionals, coloring pages, and reflections are shared regularly on the
+					<a href="/blog">blog</a>. Find visual inspiration on
+					<a href="https://pin.it/2O9jRsN6k" target="_blank">Pinterest</a>, or explore
+					the full shop on <a href="https://selar.com/m/paean-verity1" target="_blank">Selar</a>.
+				</p>
+			</section>
 		</main>
 		<Footer />
 	</body>
 </html>
+
+<style>
+	.hero {
+		text-align: center;
+		padding: 3em 0;
+	}
+	.hero-logo {
+		width: 120px;
+		margin-bottom: 1em;
+	}
+	.hero h1 {
+		margin-bottom: 0.3em;
+	}
+	.tagline {
+		font-family: 'Dancing Script', cursive;
+		font-size: 1.6em;
+		color: var(--accent);
+		margin-bottom: 1.5em;
+	}
+	.hero-links {
+		display: flex;
+		gap: 1em;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	.intro, .cta {
+		padding: 2em 0;
+		border-top: 1px solid rgba(244, 246, 245, 0.15);
+	}
+</style>
